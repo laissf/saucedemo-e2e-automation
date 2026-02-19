@@ -1,0 +1,22 @@
+{
+  "name": "saucedemo-e2e-automation",
+  "version": "1.0.0",
+  "description": "End-to-end automation testing for SauceDemo using Playwright.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "mcp:server": "playwright run-server"
+  },
+  "keywords": [
+    "playwright",
+    "e2e",
+    "automation",
+    "testing",
+    "saucedemo"
+  ],
+  "devDependencies": {
+    "playwright": "^1.58.2"
+  }
+}
