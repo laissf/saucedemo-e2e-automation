@@ -5,23 +5,17 @@ module.exports = {
     timeout: 5000,
   },
   reporter: 'list',
+  use: {
+    baseURL: 'https://www.saucedemo.com',
+    // headless: false,           // Abre o navegador
+    // slowMo: 5000,              // Pausa de 1 segundo entre cada ação
+    // viewport: { width: 1280, height: 720 }, // Define tamanho da janela
+  },
   projects: [
     {
       name: 'Chromium',
       use: {
         browserName: 'chromium',
-        connectOptions: {
-          wsEndpoint: 'ws://localhost:3000', // URL do MCP Server
-        },
-      },
-    },
-    {
-      name: 'Firefox',
-      use: {
-        browserName: 'firefox',
-        connectOptions: {
-          wsEndpoint: 'ws://localhost:3000', // URL do MCP Server
-        },
       },
     },
   ],
