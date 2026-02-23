@@ -1,0 +1,38 @@
+🔹 Feature: Login
+TC-01 – Successful Login
+User: standard_user
+Expected: Redirect to inventory page
+TC-02 – Invalid Username
+User: invalid_user
+Expected: Error message displayed
+TC-03 – Invalid Password
+Expected: Error message displayed
+TC-04 – Empty Fields
+Expected: Validation error
+TC-05 – Locked User
+User: locked_out_user
+Expected: Account locked message
+
+🔹 Feature: Product Listing
+TC-06 – Products Displayed
+Validate all products load
+TC-07 – Sorting A-Z
+Validate order changes correctly
+TC-08 – Sorting by Price
+Validate numeric ordering
+
+🔹 Feature: Cart
+TC-09 – Add Item to Cart
+Cart badge increments
+TC-10 – Remove Item
+Cart badge decrements
+
+🔹 Feature: Checkout
+TC-11 – Complete Checkout
+Validate success message
+TC-12 – Cancel Checkout
+User redirected to inventory
+TC-13 – Missing First Name
+Error displayed
+TC-14 – Missing Postal Code
+Error displayed
