@@ -7,9 +7,8 @@ module.exports = {
   reporter: 'list',
   use: {
     baseURL: 'https://www.saucedemo.com',
-    // headless: false,           // Abre o navegador
-    // slowMo: 5000,              // Pausa de 1 segundo entre cada ação
-    // viewport: { width: 1280, height: 720 }, // Define tamanho da janela
+    testIdAttribute: 'data-test',
+    
   },
   projects: [
     {
@@ -20,3 +19,4 @@ module.exports = {
     },
   ],
 };
+
