@@ -5,7 +5,7 @@
 const { test, expect } = require('@playwright/test');
 
 //importação do poo, a classe LoginPage do arquivo loginpage.js 
-const LoginPage = require('../pages/loginPage');
+const LoginPage = require('../../pages/loginPage');
 
 //async = função assíncrona que recebe o objeto page como argumento. O objeto page é fornecido pelo Playwright e representa a página web onde as ações de teste serão realizadas. 
 //page = é a instância do navegador, é o objeto que representa a página web onde as ações serão realizadas. Ele é fornecido pelo Playwright e é usado para interagir com a página, como navegar, clicar em elementos, preencher formulários, etc.

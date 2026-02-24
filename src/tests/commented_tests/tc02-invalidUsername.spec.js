@@ -2,7 +2,7 @@
 // User: invalid_user
 // Expected: Error message displayed
 const { test, expect } = require('@playwright/test');
-const LoginPage = require('../pages/loginPage');
+const LoginPage = require('../../pages/loginPage');
 
 test('invalid_user login attempt', async ({ page }) => {
     const loginPage = new LoginPage(page);
