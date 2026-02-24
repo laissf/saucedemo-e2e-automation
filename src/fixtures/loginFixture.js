@@ -1,4 +1,4 @@
-const { test as base} = require('@playwright/test');
+const { test } = require('@playwright/test');
 const LoginPage = require('../pages/loginPage');
 
 exports.test = test.extend({
