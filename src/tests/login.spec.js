@@ -2,6 +2,7 @@ const { test, expect } = require('../fixtures/loginFixture');
 const LoginPage = require('../pages/loginPage');
 const { TEST_CREDENTIALS, ERROR_MESSAGES } = require('../utils/testData');
 
+
 test('successful login', async ({ page, loginPage }) => {
     await loginPage.login(TEST_CREDENTIALS.standard.username, TEST_CREDENTIALS.standard.password);
     await expect(page).toHaveURL(/.*inventory.*/);
